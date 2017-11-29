@@ -591,3 +591,64 @@ Cannot render console from 104.254.16.4! Allowed networks: 127.0.0.1, ::1, 127.0
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 104.254.16.4 at 2017-10-17 17:31:31 +0000
 Cannot render console from 104.254.16.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 104.254.16.4 at 2017-11-29 21:05:51 +0000
+Cannot render console from 104.254.16.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 32ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 104.254.16.4 at 2017-11-29 21:05:57 +0000
+Cannot render console from 104.254.16.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 280ms (Views: 274.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 104.254.16.4 at 2017-11-29 21:05:57 +0000
+Cannot render console from 104.254.16.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 104.254.16.4 at 2017-11-29 21:05:58 +0000
+Cannot render console from 104.254.16.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 104.254.16.4 at 2017-11-29 21:05:58 +0000
+Cannot render console from 104.254.16.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 104.254.16.4 at 2017-11-29 21:05:58 +0000
+Cannot render console from 104.254.16.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 104.254.16.4 at 2017-11-29 21:05:58 +0000
+Cannot render console from 104.254.16.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts/new" for 104.254.16.4 at 2017-11-29 21:06:04 +0000
+Cannot render console from 104.254.16.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 39ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 104.254.16.4 at 2017-11-29 21:06:17 +0000
+Cannot render console from 104.254.16.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NZsOU9soS3e028sXi1TIasFSrFNJzS1T/TUsTyfYA7jES8++mcEsU9fdMvO/LSCAqFZ0o9ob7GQ6uRWMGZreUw==", "post"=>{"title"=>"Test Post", "description"=>"another test posts"}, "commit"=>"Submit Post"}
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.1ms)[0m  INSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Test Post"], ["description", "another test posts"], ["created_at", "2017-11-29 21:06:17.932170"], ["updated_at", "2017-11-29 21:06:17.932170"]]
+  [1m[36m (6.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://67.205.188.72:40955/posts
+Completed 302 Found in 33ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/posts" for 104.254.16.4 at 2017-11-29 21:06:17 +0000
+Cannot render console from 104.254.16.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
